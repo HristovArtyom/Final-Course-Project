@@ -1,0 +1,141 @@
+@use '../../styles/variables' as *;
+
+.header {
+  box-shadow: 1px 126px 80px 55px $black;
+  position: relative;
+  z-index: 2;  
+}
+
+.header__bg--main {
+  background: $black;
+}
+
+.header__bg--second {
+  background: rgba(74, 74, 74, .35);
+}
+
+.navigation {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  gap: 25px;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;  
+
+  &__menu {
+    display: none;
+    width: 50px;
+    height: 3px;
+    background-color: $red;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width:1024px) {  
+  .nav {
+    order: 3;
+    &__list {
+      display: none;
+    }
+  }
+
+  .burger__menu {
+    display: block;
+  }
+
+  .logo {
+    order: 2;
+  }
+
+  @keyframes burgerRotate {
+    from {
+      transform: rotateY(0);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  .burger__open {
+    animation: burgerRotate 1s linear infinite;
+  }
+
+  .open {    
+    animation: slideInRight .3s linear;
+    display: block;
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 135px;
+    background: rgb(255, 0, 0, .9);
+    border-bottom-left-radius: 140%;
+    border-top-left-radius: 80%;
+    border-bottom-right-radius: 50%;
+    text-align: center;    
+    padding-top: 150px;
+  }
+
+  .closed {
+    display: none;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .header__btn {
+    display: none;
+  }
+
+  .open {
+    border-radius: 0;
+  }
+}
+
+@keyframes morph {
+  0%, 100% {
+    border-radius: 40% 60% 70% 30% / 45% 45% 55% 55%;
+  }
+  40% {
+    border-radius:70% 30% 45% 55% / 30% 30% 70% 70%;
+  }
+  70% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
+}
+
+.header__btn {
+  width: 50px;
+  height: 50px;  
+  border-radius: 40% 60% 70% 30% / 45% 45% 55% 55%;
+  animation: morph 3s linear infinite;
+  border: none;
+  color: $white;
+}
+
+.btn__bg--main {
+  box-shadow: 0 0 20px 20px #5d0029;
+  background-image: linear-gradient(180deg, #fa23fe, #fe0172 80%);
+}
+
+.btn__bg--second {
+  box-shadow: 0 0 20px 20px #5d0000;
+  background-image: linear-gradient(180deg, #ff6363, #fe0101 80%);
+}

@@ -1,0 +1,88 @@
+@use '../../styles/variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
+.hero {
+  &__size {
+    height: 900px;
+    padding-top: 300px;
+  }
+
+  &__section {
+    background: url(../../images/hero11.png) no-repeat center;
+  } 
+
+  &__section--2 {
+    background: url(../../images/hero2.png) no-repeat center;
+  } 
+
+  &__section--3 {
+    background: url(../../images/hero3.jpg) no-repeat center;
+  } 
+
+  &__section--4 {
+    background: url(../../images/hero4.jpg) no-repeat center;
+  } 
+
+  &__h1 {
+    color: $white;
+    font-size: 100px;
+    font-family: 'Rozha One', serif;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    color: $white;
+    font-size: 40px;
+    max-width: 500px;
+    font-family: 'Rozha One', serif;
+    line-height: 1.4;
+  }
+}
+
+.swiper-pagination {
+  width: 25% !important;
+  left: 65% !important;
+  display: flex;
+  gap: 55px;
+  height: 185px;
+  align-items: baseline;
+}
+
+.swiper-pagination-bullet {
+  font-size: 100px;
+  height: 0;
+  margin: 100px;
+  color: $white;
+  z-index: 20;
+  font-family: 'Rozha One', serif;
+}
+
+.swiper-pagination-bullet-active {
+  font-size: 145px;
+  color: $red !important;
+  font-family: 'Rozha One', serif;
+}
+
+@media screen and (max-width:768px) {
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .hero {
+    &__size {
+      height: 700px;
+      padding-top: 170px;
+    }
+
+    &__h1 {
+      font-size: 85px;
+    }
+
+    &__text {
+      font-size: 32px;
+    }
+  }
+}
