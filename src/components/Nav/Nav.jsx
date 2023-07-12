@@ -1,9 +1,9 @@
 import './nav.scss';
-import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const Li = ({ text, to, onClick }) => {
   return <li className="nav__item">
-    <NavLink  to={to} className="nav__link" onClick={onClick}>{text}</NavLink>
+    <HashLink  to={to} className="nav__link" onClick={onClick}>{text}</HashLink>
   </li>
 }
 

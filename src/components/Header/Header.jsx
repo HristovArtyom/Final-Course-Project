@@ -10,18 +10,6 @@ const Header = () => {
   const theme = useContext(ThemeContext);
   const [style, setStyle] = useState("bg--main");
   const [menu, setMenu] = useState("hide");
-
-  const onClContacts = () => {
-    window.location.href = "/#footer";
-  };
-
-  const onClComics = () => {
-    window.location.href = "/#comics";
-  };
-
-  const onClCharacters = () => {
-    window.location.href = "/#characters";
-  };
   
   const changeStyle = () => {
     if(style === 'bg--main'){
@@ -51,9 +39,9 @@ const Header = () => {
           <div className="nav">
             <ul className={`nav__list ${menu}`}>
               <Nav text="Home" to="/"/>
-              <Nav text="Comic" onClick={onClComics}/>
-              <Nav text="Character" onClick={onClCharacters}/>
-              <Nav text="Contacts" onClick={onClContacts}/>
+              <Nav text="Comic" to="/#comics"/>
+              <Nav text="Character" to="/#characters"/>
+              <Nav text="Contacts" to="/#footer"/>
             </ul>
             <div className={`burger burger__${menu}`} onClick={openMenu}>
               <span className="burger__menu"></span>

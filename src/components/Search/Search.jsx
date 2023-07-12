@@ -16,7 +16,7 @@ const Form = ({ onSubmit }) => {
 
   return(
     <form className='form' action="" onSubmit={handleSubmit}>
-      <input onChange={handleChange} className="input" type="text" placeholder="Search hero..." name="" id=""/>
+      <input onChange={handleChange} className="input" type="text" placeholder="Search hero..." name="" id="" required/>
       <Button text="Search" type="submit"/>
     </form>
   )

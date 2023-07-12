@@ -19,12 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/hero/:heroId",
     element: <Hero/>
-    
   },
   {
     path: "/comics/:comicsId",
     element: <Comics/>
-    
   },   
 ]);
 

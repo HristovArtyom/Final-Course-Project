@@ -12,4 +12,4 @@ export const api = {
   }
 }
 
-// export default apiMarvel;
+export default api;

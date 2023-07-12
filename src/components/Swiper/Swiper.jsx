@@ -36,16 +36,16 @@ const Slider = () => {
     },
   };
   return (
-    <Swiper
-    
+    <Swiper    
       modules={[Autoplay, Scrollbar, A11y, Pagination]}
       spaceBetween={50}
       slidesPerView={1}
       pagination={pagination}
-      loop={true}      
+      loop={true}
       autoplay={{
-        delay: 1500,
+        delay: 2500,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true
       }}
     >
       {swiperArr.map(item => 
