@@ -9,11 +9,11 @@ import {api} from '../../config/api';
 const Characters = ({ style }) => {
   const [data, setData] = useState([]);
   
-  useEffect(() => {
+  useEffect(() => {    
     api.request('characters?nameStartsWith=Hul&limit=4').then(data => setData(data.data.results))
   }, [])
 
-  const makeSearch = async(event) =>{
+  const makeSearch = async(event) =>{    
     api.request(`characters?nameStartsWith=${event}&limit=4`).then(data => setData(data.data.results))
   }
 
