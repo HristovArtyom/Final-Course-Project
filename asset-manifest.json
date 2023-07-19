@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Final-Course-Project/static/css/main.8bfe53f3.css",
+    "main.js": "/Final-Course-Project/static/js/main.4f8c90ea.js",
+    "static/js/787.96a7194a.chunk.js": "/Final-Course-Project/static/js/787.96a7194a.chunk.js",
+    "static/media/insider.png": "/Final-Course-Project/static/media/insider.90449c2ef615fef2c509.png",
+    "static/media/hero2.png": "/Final-Course-Project/static/media/hero2.d63b6c3fcc82c8411502.png",
+    "static/media/hero3.jpg": "/Final-Course-Project/static/media/hero3.e2cdf517211c745b9bb6.jpg",
+    "static/media/hero11.png": "/Final-Course-Project/static/media/hero11.c4c80026afe7aefb41fc.png",
+    "static/media/error.jpg": "/Final-Course-Project/static/media/error.70f7165342b79fcc716e.jpg",
+    "static/media/hero4.jpg": "/Final-Course-Project/static/media/hero4.3b495c5b950998fb7432.jpg",
+    "static/media/ins.svg": "/Final-Course-Project/static/media/ins.41468a53812e65fceec6dace72b78597.svg",
+    "static/media/twt.svg": "/Final-Course-Project/static/media/twt.7f713a79fb40fcd62da3ea6db12c1476.svg",
+    "static/media/fb.svg": "/Final-Course-Project/static/media/fb.cb2510e870541813762d6bcbb8632aac.svg",
+    "index.html": "/Final-Course-Project/index.html",
+    "main.8bfe53f3.css.map": "/Final-Course-Project/static/css/main.8bfe53f3.css.map",
+    "main.4f8c90ea.js.map": "/Final-Course-Project/static/js/main.4f8c90ea.js.map",
+    "787.96a7194a.chunk.js.map": "/Final-Course-Project/static/js/787.96a7194a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8bfe53f3.css",
+    "static/js/main.4f8c90ea.js"
+  ]
+}
